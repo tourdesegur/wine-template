@@ -1,3 +1,7 @@
+:root {
+    background-color: grey;
+}
+
 i {
     color: white;
 }
@@ -20,7 +24,23 @@ a {
     color:brown;
 }
 
-/* Navbar */
+.navigation-bar {
+    background-color: white;
+}
+
+.brand-restaurant {
+    letter-spacing: 4px;
+}
+
+.i-green {
+    color: green;
+}
+
+.i-green:hover {
+    color: black;
+}
+
+/* Navbar https://www.youtube.com/watch?v=vkNkeCSb13M https://github.com/CodeModeGit/Slide-Out-Navigation
 
 a,button{
     cursor: pointer;
@@ -58,7 +78,7 @@ nav{
 
 .hamburger{
     display: block;
-    top: 5%;
+    top: 150px;
     left: 95%;
     width: 30px;
     height: 30px;
@@ -100,4 +120,4 @@ nav{
     background-color: #fff;
     transform: rotate(-45deg) translate(6px, -5px);
 }
-
+*/
