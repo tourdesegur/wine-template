@@ -1,7 +1,22 @@
 i {
-    color: black;
+    color: white;
 }
 
 a {
     text-decoration: none !important;
   }
+
+.contact-bar {
+    background-color: black;
+}
+
+.contact-bar-links {
+    padding: 0 10px;
+    color: white;
+    font-size: 12px;
+}
+
+.contact-bar-links:hover, i:hover {
+    color:brown;
+}
+
