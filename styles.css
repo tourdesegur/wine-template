@@ -10,6 +10,10 @@ a {
     text-decoration: none !important;
   }
 
+  a,button{
+    cursor: pointer;
+}
+
 .contact-bar {
     background-color: black;
 }
@@ -40,36 +44,32 @@ a {
     color: black;
 }
 
-/* Navbar https://www.youtube.com/watch?v=vkNkeCSb13M https://github.com/CodeModeGit/Slide-Out-Navigation
-
-a,button{
-    cursor: pointer;
-}
+/* Navbar https://www.youtube.com/watch?v=vkNkeCSb13M https://github.com/CodeModeGit/Slide-Out-Navigation */
 
 nav{
     position: absolute;
-    top: 100px;
-    right: 50px;
-    width: 250px;
+    top: 120px;
+    width: 300px;
 }
 
 .navigation{
     position: fixed;
-    right: -500px;
     width: 350px;
+    left: -101%;
     height: 100%;
-    background-color: #000;
+    background-color: #fff;
     transition: .5s;
 }
 
 .navigation ul li{
-    color: #fff;
+    color: black;
     text-align: right;
     text-transform: uppercase;
     list-style-type: none;
-    font-size: 1.5em;
+    font-size: 1.1em;
     padding: 20px 30px;
-    border-bottom: 1pt solid #252525;
+    margin-left: 30px;
+    border-bottom: 1px solid #d2d1d1;
 }
 
 .hamburger, .bar{
@@ -78,8 +78,8 @@ nav{
 
 .hamburger{
     display: block;
-    top: 150px;
-    left: 95%;
+    left: 1%;
+    top: 8%;
     width: 30px;
     height: 30px;
     transform: translateY(-50%);
@@ -104,11 +104,11 @@ nav{
 }
 
 .navigation.active{
-    right: 0;
+    left: -1%;
 }
 
 .hamburger.open #bar1{
-    background-color: #fff;
+    background-color: #000;
     transform: rotate(45deg) translate(6px, 5px);
 }
 
@@ -117,7 +117,6 @@ nav{
 }
 
 .hamburger.open #bar3{
-    background-color: #fff;
+    background-color: #000;
     transform: rotate(-45deg) translate(6px, -5px);
 }
-*/

@@ -29,7 +29,22 @@
     <div class="container-fluid navigation-bar pt-4 pb-4">
         <div class="row">
             <div class="col-4 text-start">
-                One of two columns
+              <div class="navigation">
+                <button class="hamburger" onclick="show()">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
+                </button>
+       
+                <nav>
+                    <ul>
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
               </div>
               <div class="col-4 text-center">
                 <h2 class="brand-restaurant">GREEN K<i class="fa-solid fa-leaf i-green"></i>TCHEN</h2>
@@ -40,30 +55,11 @@
         </div>
     </div>
 
-<!-- <div class="navigation">
-        <button class="hamburger" onclick="show()">
-            <div id="bar1" class="bar"></div>
-            <div id="bar2" class="bar"></div>
-            <div id="bar3" class="bar"></div>
-        </button>
-
-        <nav>
-            <ul>
-                <li><a>Home</a></li>
-                <li><a>About</a></li>
-                <li><a>Blog</a></li>
-                <li><a>Contact</a></li>
-            </ul>
-        </nav>
-
-    </div> -->
-    
-
-<!--    <script>
+    <script>
         function show(){
         document.querySelector('.hamburger').classList.toggle('open')
         document.querySelector('.navigation').classList.toggle('active')
     }
-    </script> -->
+    </script> 
 </body>
 </html>
