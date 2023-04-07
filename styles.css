@@ -42,7 +42,6 @@ a {
 .navigation-bar {
     background-color: white;
     height: 90px;
-    width: 100%;
     position: fixed;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
 }
@@ -50,6 +49,7 @@ a {
 .brand-restaurant {
     letter-spacing: 4px;
     font-size: 32px;
+    margin-bottom: 48px;
 }
 
 .i-green {
@@ -75,7 +75,7 @@ a {
     width: 100%;
     background-color: black;
     display: block;
-    border-radius: 5px;
+    border-radius: 3px;
     transition: 0.3s ease;
 }
 
@@ -141,6 +141,13 @@ a {
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
 }
 
+.btn-reservation {
+    padding: 10px 50px !important;
+    border: none !important;
+    border-radius: 3px !important;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
 @media only screen and (max-width:1000px) {
     .change{
         width: 40%;
@@ -154,7 +161,17 @@ a {
         font-size: 24px;
         white-space: normal;
         word-wrap: break-word;
+        text-align: right;
     }
+
+    .col-4:nth-child(3) {
+        display: none;
+        width: 0%;
+      }
+
+      .col-4:nth-child(1), .col-4:nth-child(2) {
+        width: 50%;
+      }
 }
 
 @media only screen and (max-width:600px) {
@@ -163,80 +180,3 @@ a {
         align-items: center;
     }  
 }
-
-/* Navbar https://www.youtube.com/watch?v=vkNkeCSb13M https://github.com/CodeModeGit/Slide-Out-Navigation 
-
-nav{
-    position: absolute;
-    top: 120px;
-    width: 300px;
-}
-
-.navigation{
-    position: fixed;
-    width: 350px;
-    left: -101%;
-    height: 100%;
-    background-color: #fff;
-    transition: .5s;
-}
-
-.navigation ul li{
-    color: black;
-    text-align: right;
-    text-transform: uppercase;
-    list-style-type: none;
-    font-size: 1.1em;
-    padding: 20px 30px;
-    margin-left: 30px;
-    border-bottom: 1px solid #d2d1d1;
-}
-
-.hamburger, .bar{
-    position: fixed;
-}
-
-.hamburger{
-    display: block;
-    left: 1%;
-    top: 8%;
-    width: 30px;
-    height: 30px;
-    transform: translateY(-50%);
-    border: 0;
-    background: 0 0;
-}
-
-.bar{
-    top: 3px;
-    background: #000;
-    width: 100%;
-    height: 4px;
-    transition: all .3s ease-in;
-}
-
-#bar2{
-    top: 11px;
-}
-
-#bar3{
-    top: 19px;
-}
-
-.navigation.active{
-    left: -1%;
-}
-
-.hamburger.open #bar1{
-    background-color: #000;
-    transform: rotate(45deg) translate(6px, 5px);
-}
-
-.hamburger.open #bar2{
-    background-color: transparent;
-}
-
-.hamburger.open #bar3{
-    background-color: #000;
-    transform: rotate(-45deg) translate(6px, -5px);
-} */
