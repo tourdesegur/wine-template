@@ -49,6 +49,7 @@ a {
     position: fixed;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
     top: 32px;
+    z-index: 2;
 }
 
 .brand-restaurant {
@@ -159,7 +160,7 @@ a {
     justify-content: space-between;
     gap: 10px;
     flex-wrap: wrap;
-    margin-top: 130px;
+    margin-top: 100px;
   }
 
   .text-vertical {
