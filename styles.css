@@ -23,6 +23,10 @@ a {
 
 .contact-bar {
     background-color: black;
+    position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
 }
 
 .contact-bar-links {
