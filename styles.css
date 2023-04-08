@@ -60,6 +60,14 @@ a {
     color: black;
 }
 
+.btn-reservation {
+    padding: 10px 60px !important;
+    border: none !important;
+    border-radius: 0px !important;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    margin-right: 4%;
+}
+
 /*hamburger responsive */
 
 #hamburger {
@@ -71,11 +79,10 @@ a {
 }
 
 .bar {
-    height: 5px;
+    height: 4px;
     width: 100%;
     background-color: black;
     display: block;
-    border-radius: 3px;
     transition: 0.3s ease;
 }
 
@@ -114,7 +121,7 @@ a {
 }
 
 .icon #bar1 {
-    transform: translateY(4px) rotate(-45deg);
+    transform: translateY(2px) rotate(-45deg);
 }
 
 .icon #bar3 {
@@ -141,14 +148,29 @@ a {
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
 }
 
-.btn-reservation {
-    padding: 10px 50px !important;
-    border: none !important;
-    border-radius: 3px !important;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+.website-body {
+    margin-top: 90px;
+    padding: 0 !important;
 }
 
-@media only screen and (max-width:1000px) {
+.col-photo {
+    background-color: aquamarine;
+    max-width: 49.6% !important;
+    height: 760px;
+}
+
+.col-text {
+    background-color: blueviolet;
+    max-width: 49.6% !important;
+}
+
+.food-main {
+    object-fit: cover;
+    height: auto;
+    width: 100%;
+}
+
+@media only screen and (max-width:1020px) {
     .change{
         width: 40%;
         font-size: 20px;
@@ -166,7 +188,7 @@ a {
     .icon #bar1 {
         transform: translateY(1px) rotate(-45deg);
     }
-    
+   
     .icon #bar3 {
         transform: translateY(-5px) rotate(45deg);
     }
@@ -183,6 +205,7 @@ a {
         text-align: right;
         padding-top: 5px;
     }
+
 
     .col-4:nth-child(3) {
         display: none;
@@ -233,7 +256,7 @@ a {
     .icon #bar1 {
         transform: translateY(1px) rotate(-45deg);
     }
-    
+   
     .icon #bar3 {
         transform: translateY(-3px) rotate(45deg);
     }
