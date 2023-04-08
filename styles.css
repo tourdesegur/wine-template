@@ -48,6 +48,7 @@ a {
     height: 90px;
     position: fixed;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    top: 32px;
 }
 
 .brand-restaurant {
@@ -152,27 +153,27 @@ a {
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
 }
 
-.website-body {
+.flexbox-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
     margin-top: 90px;
-    padding: 0 !important;
+  }
+  
+  .column {
+    flex: 1;
+    min-width: 300px; /* optional: set a minimum width for the columns */
+    
 }
-
-.col-photo {
-    background-color: aquamarine;
-    max-width: 49.6% !important;
-    height: 760px;
-}
-
-.col-text {
-    background-color: blueviolet;
-    max-width: 49.6% !important;
-}
-
-.food-main {
-    object-fit: cover;
-    height: auto;
+  
+  .column img {
     width: 100%;
+    height: auto;
+    aspect-ratio: 1/1; /* maintain a square aspect ratio */
+    object-fit: cover;
 }
+  
 
 @media only screen and (max-width:1020px) {
     .change{
@@ -219,6 +220,17 @@ a {
       .col-4:nth-child(1), .col-4:nth-child(2) {
         width: 50%;
       }
+
+      .flexbox-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .column {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
 }
 
 @media only screen and (max-width:600px) {
@@ -238,7 +250,7 @@ a {
     }
 }
 
-@media only screen and (max-width:375px) {
+@media only screen and (max-width:400px) {
     .brand-restaurant {
         letter-spacing: 2px;
         font-size: 14px;
