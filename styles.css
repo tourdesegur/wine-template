@@ -153,27 +153,27 @@ a {
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
 }
 
+
 .flexbox-container {
     display: flex;
     justify-content: space-between;
     gap: 10px;
     flex-wrap: wrap;
-    margin-top: 90px;
+    margin-top: 100px;
   }
   
   .column {
     flex: 1;
     min-width: 300px; /* optional: set a minimum width for the columns */
-    
+  
 }
   
-  .column img {
+ .column img {
     width: 100%;
     height: auto;
     aspect-ratio: 1/1; /* maintain a square aspect ratio */
     object-fit: cover;
-}
-  
+} 
 
 @media only screen and (max-width:1020px) {
     .change{
